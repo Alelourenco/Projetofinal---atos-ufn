@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Registro de chamados</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="./resources/css/main.css" rel="stylesheet" media="all">
+    <script src="./resources/js/main_crud.js"></script>
+</head>
+<body>
+    <div class="page-wrapper bg-dark p-t-100 p-b-50">
+        <div class="wrapper wrapper--w900">
+            <div class="card card-6">
+                <div class="card-heading">
+                    <h2 class="title">Registro de chamados</h2>
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        <div class="form-row">
+                            <div class="name">Chamado</div>
+                            <div class="value">
+                                <input class="input--style-6" type="text" id="inputChamado">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Titulo</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-6" type="text" name="email" id="inputTitulo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Status</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-6" type="text" name="email" id="inputStatus">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Comentario</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="textarea--style-6" type="text" id="inputComentario"></input>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex mt-2">
+                            <label>1 - Registrar</label>
+                            <input class="form-check-input" type="radio" name="radioInput" id="radioInput" value="insert">
+                        </div>
+                        <div class="d-flex mt-2">
+                            <label>2 - Editar</label>
+                            <input class="form-check-input" type="radio" name="radioInput" id="radioInput" value="update">
+                        </div>
+                        <div class="d-flex mt-2">
+                            <label>3 - Excluir</label>
+                            <input class="form-check-input" type="radio" name="radioInput" id="radioInput" value="remove">
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <input type="button" value="Confirmar" onclick="confirm()">
+                            <a href="lista.html">Chamados registrados</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
